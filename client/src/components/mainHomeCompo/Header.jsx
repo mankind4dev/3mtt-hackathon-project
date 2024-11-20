@@ -31,14 +31,14 @@ export default function Header() {
         <Link to="/">
           <div className="flex">
             <img
-              src="./public/renthub1.png"
+              src="/renthub1.png"
               alt=""
               width={"90px"}
               height={"30px"}
               className="rounded"
             />
             <img
-              src="./public/nigeria.png"
+              src="./nigeria.png"
               alt=""
               width={"60px"}
               height={"30px"}
