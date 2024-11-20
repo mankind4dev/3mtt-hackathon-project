@@ -159,7 +159,7 @@ export default function CreateListing() {
       if (data.success === false) {
         setError(data.message);
       }
-      navigate(`/apartment-list/listing/${data._id}`);
+      navigate(`/listing/${data._id}`);
       console.log(data);
     } catch (error) {
       setError(error.message);
