@@ -47,7 +47,7 @@ const CreateListingPage = () => {
         <Navbar />
         <CreateHeadingPage />
         <Box>
-          kjhdgsfdkj
+        Your Listings
           <p className="text-red-700 mt-5">
             {showListingsError ? "Error showing listings" : ""}
           </p>
