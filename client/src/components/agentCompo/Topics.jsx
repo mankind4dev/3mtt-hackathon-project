@@ -1,9 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 import Weaks from "./Weaks";
-import Strongest from "./Strongest";
-// import Strongest from "../Strongest";
-// import Weaks from "../Weaks";
+import Strongest from "./Strongest"; 
 
 const Topics = () => {
   return (

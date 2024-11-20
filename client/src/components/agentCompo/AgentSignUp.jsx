@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { Box, Typography } from "@mui/material";
-import { FaInfoCircle } from "react-icons/fa";
+import { Box, Typography } from "@mui/material"; 
 import SignUpHead from "./SignUpHead";
 import { useNavigate } from "react-router-dom";
 

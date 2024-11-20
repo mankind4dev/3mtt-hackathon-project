@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { Box, Typography } from "@mui/material";
-import { FaInfoCircle } from "react-icons/fa";
-import SignUpHead from "./SignUpHead";
+import { Box, Typography } from "@mui/material"; 
 import SignInHead from "./SignInHead";
 
 const AgentSignUp = () => {
@@ -105,13 +103,7 @@ const AgentSignUp = () => {
         display={"flex"}
         width={"100%"} 
         justifyContent={"center"}
-        padding={5}
-        // sx={{
-        //     backgroundImage: "url('/nigeria.png')",
-        //     backgroundSize: "cover",
-        //     backgroundPosition: "cent"
-
-        // }}
+        padding={5} 
       >
         <Box
           maxWidth={"100%"}
