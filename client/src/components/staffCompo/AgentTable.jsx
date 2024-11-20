@@ -25,13 +25,14 @@ function createData(name, calories, fat, carbs, protein, price) {
     history: [
       {
         date: "2020-01-05",
-        customerId: "11091700",
-        amount: 3,
+        customerId: "OS/86TT-800058/NG",
+        amount: 90000,
       },
       {
-        date: "2020-01-02",
-        customerId: "Anonymous",
-        amount: 1,
+        date: "2024-10-20",
+        customerId: "OS/26TT-910058/NG",
+        amount: 70500,
+        hostel: "A room self-con"
       },
     ],
   };
@@ -71,22 +72,22 @@ function Row(props) {
               <Table size="small" aria-label="purchases">
                 <TableHead>
                   <TableRow>
+                    <TableCell>Tanant ID</TableCell>
                     <TableCell>Date</TableCell>
-                    <TableCell>Customer</TableCell>
-                    <TableCell align="right">Amount</TableCell>
-                    <TableCell align="right">Total price ($)</TableCell>
+                    <TableCell align="right">Initial Amount</TableCell>
+                    <TableCell align="right">Total Amount paid (#)</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
                   {row.history.map((historyRow) => (
                     <TableRow key={historyRow.date}>
+                      <TableCell>{historyRow.customerId}</TableCell>
                       <TableCell component="th" scope="row">
                         {historyRow.date}
                       </TableCell>
-                      <TableCell>{historyRow.customerId}</TableCell>
                       <TableCell align="right">{historyRow.amount}</TableCell>
                       <TableCell align="right">
-                        {Math.round(historyRow.amount * row.price * 100) / 100}
+                        {Math.round(historyRow.amount * row.price * 1) / 1}
                       </TableCell>
                     </TableRow>
                   ))}
@@ -119,11 +120,12 @@ Row.propTypes = {
 };
 
 const rows = [
-  createData("Frozen yoghurt", 159, 6.0, 24, 4.0, 3.99),
-  createData("Ice cream sandwich", 237, 9.0, 37, 4.3, 4.99),
-  createData("Eclair", 262, 16.0, 24, 6.0, 3.79),
-  createData("Cupcake", 305, 3.7, 67, 4.3, 2.5),
-  createData("Gingerbread", 356, 16.0, 49, 3.9, 1.5),
+  createData("Ogunmakin Sunday", "OS/25TT-882358/NG", 159, 6.0, 24, 4.0, 3.99),
+  createData("Lukman Adeoti", "OS/25TT-882359/NG", 237, 9.0, 37, 4.3, 4.99),
+  createData("Bamidele Oluwanifemi", "OS/25TT-882360/NG", 262, 16.0, 24, 6.0, 3.79),
+  createData("Adebanke Ojufun", "OS/25TT-882361/NG", 305, 3.7, 67, 4.3, 2.5),
+  createData("Oladele Taiwo", "OS/25TT-882362/NG", 356, 16.0, 49, 3.9, 1.5),
+  createData("Oluwadare Daniel", "OS/25TT-882363/NG", 356, 16.0, 49, 3.9, 1.5),
 ];
 
 export default function AgentTable() {
@@ -139,10 +141,11 @@ export default function AgentTable() {
               <TableRow>
                 <TableCell />
                 <TableCell>Agent Name</TableCell>
-                <TableCell align="right">Calories</TableCell>
-                <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                <TableCell align="right">Protein&nbsp;(g)</TableCell>
+                <TableCell align="right">Apartments</TableCell>
+                <TableCell align="right">Agent ID</TableCell>
+                <TableCell align="right">Tenants</TableCell>
+                <TableCell align="right">Hostel</TableCell>
+                <TableCell align="right">Hall</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
