@@ -159,16 +159,15 @@ export default function CreateListing() {
       if (data.success === false) {
         setError(data.message);
       }
-      navigate(`/listing/${data._id}`);
-      console.log(data);
-    } catch (error) {
+      navigate(`/listing/${data._id}`); 
+    } catch (error) { 
       setError(error.message);
       setLoading(false);
     }
-  };
+  }; 
 
   const handleShowListings = async () => {
-    navigate("/apartment-list") 
+    navigate("/apartment-lists") 
   };
 
   return (
@@ -311,7 +310,7 @@ export default function CreateListing() {
                       />
                       <div className="flex flex-col items-center">
                         <p className="">Regular Price</p>
-                        <span className="text-sm">($ / month)</span>
+                        <span className="text-sm">(# / month)</span>
                       </div>
                     </div>
                     {formData.offer && (
@@ -390,15 +389,14 @@ export default function CreateListing() {
                   {error && <p className="text-red-700 text-sm">{error}</p>}
                 </div>
               </form>
-              <button
-                onClick={handleShowListings}
+              <button 
+              onClick={handleShowListings}
                 className="text-green-700 w-full"
               >
                 Show Listings
               </button>
             </main>
-          </Box>
-          dafgh
+          </Box> 
         </Home>
       </Box>
     </>

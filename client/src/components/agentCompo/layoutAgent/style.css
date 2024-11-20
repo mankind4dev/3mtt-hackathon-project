@@ -17,6 +17,6 @@ select, option{
     width: 100%; 
     height: 100%;
     background-color: transparent; 
-    background-color: rgb(194, 191, 191); 
-    color: rgb(234, 201, 201);
+    background-color: rgb(251, 250, 250); 
+    color: #333;
   }

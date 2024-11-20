@@ -16,7 +16,7 @@ export const sidebarList = [
   {
     tittle: "Apartment Lists",
     iconImg: dash,
-    link: "/apartment-list",
+    link: "/apartment-lists",
   },
   {
     tittle: "Payment History",

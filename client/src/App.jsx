@@ -14,6 +14,7 @@ import Listing from "./components/agentCompo/Listing";
 import AgentSignUp from "./components/agentCompo/AgentSignUp";
 import CreateListingPage from "./components/agentCompo/CreateListingPage";
 import Contact from "./components/mainHomeCompo/Contact";
+import ShowListing from "./components/agentCompo/ShowListing";
 
 function App() {
   return (
@@ -35,7 +36,8 @@ function App() {
         <Route exact path="/agent-sign-up" element={<AgentSignUp />} />
         <Route exact path="/listing/:listingId" element={<Listing />} />
         <Route exact path="/create-lists" element={<CreateListing />} /> 
-        <Route exact path="/apartment-list" element={<CreateListingPage />} /> 
+        <Route exact path="/apartment-lists" element={<CreateListingPage />} /> 
+        <Route exact path="/apartment-lists" element={<ShowListing />} /> 
         <Route exact path="/create-listing" element={<CreateListing />} />
 
         {/* Staff  */}

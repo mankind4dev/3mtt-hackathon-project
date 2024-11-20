@@ -105,7 +105,7 @@ export default function CreateLink() {
               </p>
               {listing.offer && (
                 <p className="bg-green-900 w-full max-w-[200px] text-white text-center p-1 rounded-md">
-                  ${+listing.regularPrice - +listing.discountPrice}
+                  #{+listing.regularPrice - +listing.discountPrice}
                   <span className="font-semibold mx-3">discount</span>
                 </p>
               )}

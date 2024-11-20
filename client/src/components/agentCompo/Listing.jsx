@@ -13,11 +13,8 @@ import {
   FaParking,
   FaShare,
 } from "react-icons/fa";
-import Contact from "../mainHomeCompo/Contact";
-import Home from "./layoutAgent";
-import { Box } from "@mui/material";
-import ListHeadingPage from "./ListHeadingPage";
-import Navbar from "./Navbar";
+import Contact from "../mainHomeCompo/Contact"; 
+import { Box } from "@mui/material"; 
 
 export default function Listing() {
   SwiperCore.use([Navigation]);
@@ -53,10 +50,8 @@ export default function Listing() {
   }, [params.listingId]);
 
   return (
-    <>
-      {/* <Navbar /> */}
-      {/* <ListHeadingPage /> */}
-      <Box p={2}>
+    <> 
+      <Box >
         <main className="">
           {loading && <p className="text-center my-7 text-2xl">Loading...</p>}
           {error && (
