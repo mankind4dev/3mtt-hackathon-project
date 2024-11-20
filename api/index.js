@@ -6,6 +6,7 @@ import userRouter from "./routes/user.route.js";
 import authRouter from "./routes/auth.route.js";
 import listingRouter from "./routes/listing.route.js";
 import authAgentRouter from "./routes/authAgent.route.js";
+import path from "path";
 dotenv.config();
 
 mongoose.connect(process.env.MONGODB)
@@ -15,6 +16,8 @@ mongoose.connect(process.env.MONGODB)
   .catch((err) => {
     console.log(err);
   });
+
+  const __dirname = path.resolve();
 
 const app = express();
 
@@ -28,12 +31,21 @@ app.listen(3000, () => {
 
  
 
+ 
+
 app.use("/api/user", userRouter);
 app.use("/api/auth", authRouter);
 app.use("/api/auth/agent", authAgentRouter);
 app.use('/api/listing', listingRouter);
 
 // app.use("api/auth/agent", agentRouter)
+
+app.use(express.static(path.join(__dirname, 'client/dist')));
+
+app.get((err, req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
+})
+
 
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;

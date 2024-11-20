@@ -138,7 +138,7 @@ export default function AgentTable() {
             <TableHead>
               <TableRow>
                 <TableCell />
-                <TableCell>Dessert (100g serving)</TableCell>
+                <TableCell>Agent Name</TableCell>
                 <TableCell align="right">Calories</TableCell>
                 <TableCell align="right">Fat&nbsp;(g)</TableCell>
                 <TableCell align="right">Carbs&nbsp;(g)</TableCell>
