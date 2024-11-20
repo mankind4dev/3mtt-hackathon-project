@@ -5,7 +5,7 @@ import HeadSelect from "./HeadSelect";
 import Data from "./Data";
 import { Box } from "@mui/material";
 import AgentTable from "./AgentTable"; 
-import TenantData from "./tenantData";
+import TenantData from "./TenantData";
 import LandloadData from "./LandloadData";
 import AccrediteData from "./AccrediteData";
 
